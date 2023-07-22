@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Task</title>
+</head>
+<body>
+    <script>
+        function handleData(){
+            let data=JSON.parse(this.responseText)
+
+            for(e of data){
+                console.log(e.name.common,e.flags)
+            }
+        }
+        const req =new XMLHttpRequest();
+        req.addEventListener('load',handleData)
+        req.open("GET","https://restcountries.com/v3.1/all")
+        req.send()
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const object1 = {
+            name: 'person 1',
+            age: '5'
+        };
+
+        const object2 = {
+            age: '5',
+            name: 'person 1'
+        };
+
+        JSON.stringify(object1) === JSON.stringify(object2)
+
+        _.isEqual(object1, object2)
+    </script>
+</body>
+
+</html>
