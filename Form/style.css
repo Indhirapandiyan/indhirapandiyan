@@ -1,0 +1,14 @@
+
+form {
+    background: rgb(151, 171, 179);
+    border: 1px solid black;
+}
+
+.col-form-label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-control {
+    border: 1px solid black !important;
+}
